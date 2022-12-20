@@ -7,7 +7,8 @@
     "games": "bin/games.js",
     "game-even": "bin/game-even.js",
     "game-calc": "bin/game-calc.js",
-    "game-gcd": "game-gcd.js"
+    "game-gcd": "bin/game-gcd.js",
+    "game-progression": "bin/game-progression.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

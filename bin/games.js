@@ -3,6 +3,7 @@ import readlineSync from 'readline-sync';
 import isAnswerRight from './game-even.js';
 import calculation from './game-calc.js';
 import findNod from './game-gcd.js';
+// import findProgression from './game-progression.js'
 
 
 console.log('Welcome to the Games!');
@@ -15,3 +16,4 @@ console.log(`Hello, ${name}!`);
 isAnswerRight();
 calculation();
 findNod();
+// findProgression();
