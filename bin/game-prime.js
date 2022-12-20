@@ -18,11 +18,11 @@ function isNumberPrime () {
         return randomNumber > 1;
     }
 
-      if (isPrime === false && userAnswer === 'no') {
+      if (isPrime() === false && userAnswer === 'no') {
         console.log('Correct!')
-      } else if(isPrime == true && userAnswer === 'yes') {
+      } else if(isPrime() == true && userAnswer === 'yes') {
         console.log('Correct!')
-      } else if(isPrime === true && userAnswer === 'no' || isPrime === false && userAnswer == 'yes') {
+      } else if(isPrime() === true && userAnswer === 'no' || isPrime() === false && userAnswer == 'yes') {
         return console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${isPrime(randomNumber)}.
         Let's try again, ${name}!`)
       }
