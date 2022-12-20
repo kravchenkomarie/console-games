@@ -4,6 +4,7 @@ import isAnswerRight from './game-even.js';
 import calculation from './game-calc.js';
 import findNod from './game-gcd.js';
 import findProgression from './game-progression.js'
+import isNumberPrime from './game-prime.js';
 
 
 console.log('Welcome to the Games!');
@@ -13,7 +14,9 @@ export const name = readlineSync.question('Your answer: ');
 
 console.log(`Hello, ${name}!`);
 
-// isAnswerRight();
-// calculation();
-// findNod();
+isAnswerRight();
+calculation();
+findNod();
 findProgression();
+isNumberPrime();
+

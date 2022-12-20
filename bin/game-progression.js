@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 import { name } from './games.js';
 
-    function findProgression () {
+function findProgression () {
 
    for (let i = 0; i < 3; i++) {
     console.log('What number is missing in the progression?');
@@ -21,7 +21,6 @@ import { name } from './games.js';
     const progressionString = progression.join(' ')
     console.log(`Question: ${progressionString}`);
 
-
     const userAnswer = readlineSync.question('Your answer: ');
 
       if (userAnswer == randomLostNumber) {
@@ -32,7 +31,6 @@ import { name } from './games.js';
     }
 return console.log(`Congratulations, ${name}!`)
 }
-
 
 export default findProgression;
 
