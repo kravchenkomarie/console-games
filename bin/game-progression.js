@@ -1,10 +1,14 @@
-import startGames from '../src/index.js';
+import readlineSync from 'readline-sync';
+import { name } from './games.js';
 
-const gameQuestion = 'What number is missing in the progression?';
-const progressionLength = 10;
+    function findProgression () {
 
-export const generateRound = () => {
+   for (let i = 0; i < 3; i++) {
+    console.log('What number is missing in the progression?');
+
+    const progressionLength = 10;
     const randomNumber = Math.round(Math.random()*100);
+    const randomLostNumber = Math.floor(Math.random() * 10);
     const progression = [];
     
     for (let i = 1; i <= progressionLength; i += 1) {
@@ -12,11 +16,23 @@ export const generateRound = () => {
     progression.push(current);
     }
 
-    const lostNumber = randomNumber(0, progressionLength - 1);
-    const answer = String(progression[lostNumber]);
-    progression[lostNumber] = '..';
-    const question = progression.join('  ');
-    return { answer, question };
-    }
+    const lostNumber = progression[randomLostNumber];
+    progression[randomLostNumber] = '..';
+    const progressionString = progression.join(' ')
+    console.log(`Question: ${progressionString}`);
 
-export default () => startGames(gameQuestion, generateRound);
+
+    const userAnswer = readlineSync.question('Your answer: ');
+
+      if (userAnswer == randomLostNumber) {
+        console.log('Correct!');
+     } else {
+      return console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${lostNumber}. \nLet's try again, ${name}!`)
+     }
+    }
+return console.log(`Congratulations, ${name}!`)
+}
+
+
+export default findProgression;
+

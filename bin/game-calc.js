@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 import { name } from './games.js';
 
-function calculation () {
+function calculation() {
 
     for (let i = 0; i < 3; i++) {
      console.log('What is the result of the expression?');
@@ -16,11 +16,11 @@ function calculation () {
      console.log(`Question: ${operation}`);
 
      let userAnswer = readlineSync.question('Your answer: ');
-    
+
      if (userAnswer == result) {
         console.log('Correct!');
      } else {
-        return console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${result}. \nLet's try again, ${name}!`)
+      return console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${result}. \nLet's try again, ${name}!`)
      }
     }
 return console.log(`Congratulations, ${name}!`)
