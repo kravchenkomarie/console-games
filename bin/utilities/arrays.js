@@ -1,1 +1,1 @@
-export const found = arr.find(e => e.author === 'Shakespeare' && e.year === 1611);
+export const findWhere = arr.find(e => e.author === 'Shakespeare' && e.year === 1611);
