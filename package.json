@@ -9,7 +9,7 @@
     "game-calc": "bin/game-calc.js",
     "game-gcd": "bin/game-gcd.js",
     "game-progression": "bin/game-progression.js",
-     "game-prime": "bin/game-prime.js"
+    "game-prime": "bin/game-prime.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,6 +19,7 @@
   "type": "module",
   "dependencies": {
     "eslint-config-airbnb": "^19.0.4",
+    "lodash": "^4.17.21",
     "readline-sync": "^1.4.10"
   },
   "devDependencies": {
